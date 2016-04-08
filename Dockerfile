@@ -75,6 +75,7 @@ RUN chmod 755 /start.sh
 # Setup Volume
 VOLUME ["/usr/share/nginx/html"]
 
+
 # add NOCC directory to NGINX source directory
 ADD src /usr/share/nginx/html/
 RUN chown -Rf www-data.www-data /usr/share/nginx/html/
