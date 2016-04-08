@@ -1,5 +1,5 @@
 FROM ubuntu:14.04.4
-MAINTAINER Ric Harvey <ric@ngineered.co.uk>
+MAINTAINER Andrey Shapkin <a@shapkinaa.ru>
 
 # Surpress Upstart errors/warning
 RUN dpkg-divert --local --rename --add /sbin/initctl
