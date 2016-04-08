@@ -5,7 +5,7 @@ The source files for this project can be found here: [https://github.com/richarv
 
 If you have any improvements please submit a pull request.
 ### Docker hub repository
-The Docker hub build can be found here: [https://registry.hub.docker.com/u/shapkinaa/nginx-php-fpm/](https://registry.hub.docker.com/u/shapkinaa/nginx-php-fpm/)
+The Docker hub build can be found here: [https://hub.docker.com/r/shapkinaa/nocc/](https://hub.docker.com/r/shapkinaa/nocc/)
 ## Versions
 
 | Tag    | nginx  | PHP               | Ubuntu  |
@@ -15,7 +15,7 @@ The Docker hub build can be found here: [https://registry.hub.docker.com/u/shapk
 ## Building from source
 To build from source you need to clone the git repo and run docker build:
 ```
-git clone https://github.com/shapkinaa/nginx-php-fpm.git
+git clone https://github.com/shapkinaa/nocc-nginx.git
 docker build -t shapkinaa/nginx-php-fpm:latest .
 ```
 ## Pulling from Docker Hub
