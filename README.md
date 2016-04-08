@@ -1,23 +1,21 @@
 ## Introduction
 This is a Dockerfile to build a container image for nginx and php-fpm, with the ability to pull website code from git. The container can also use environment variables to configure your web application using the templating detailed in the special features section.
 ### Git repository
-The source files for this project can be found here: [https://github.com/ngineered/nginx-php-fpm](https://github.com/ngineered/nginx-php-fpm)
+The source files for this project can be found here: [https://github.com/richarvey/nginx-php-fpm](https://github.com/richarvey/nginx-php-fpm)
 
 If you have any improvements please submit a pull request.
 ### Docker hub repository
-The Docker hub build can be found here: [https://registry.hub.docker.com/u/richarvey/nginx-php-fpm/](https://registry.hub.docker.com/u/richarvey/nginx-php-fpm/)
+The Docker hub build can be found here: [https://registry.hub.docker.com/u/shapkinaa/nginx-php-fpm/](https://registry.hub.docker.com/u/shapkinaa/nginx-php-fpm/)
 ## Versions
 
 | Tag    | nginx  | PHP               | Ubuntu  |
 |--------|--------|-------------------|---------|
 | latest | 1.9.12 | 5.5.9-1ubuntu4.14 | 14.04.4 |
-| beta56 | 1.9.11 | 5.6               | 16.04   |
-| beta70 | 1.9.11 | 7.0               | 16.04   |
 
 ## Building from source
 To build from source you need to clone the git repo and run docker build:
 ```
-git clone https://github.com/ngineered/nginx-php-fpm.git
+git clone https://github.com/shapkinaa/nginx-php-fpm.git
 docker build -t shapkinaa/nginx-php-fpm:latest .
 ```
 ## Pulling from Docker Hub
@@ -34,7 +32,7 @@ You can then browse to ```http://<DOCKER_HOST>:8080``` to view the default insta
 ### Volumes
 If you want to link to your web site directory on the docker host to the container run:
 ```
-sudo docker run --name nginx -p 8080:80 -v /your_code_directory:/usr/share/nginx/html -d richarvey/nginx-php-fpm
+sudo docker run --name nginx -p 8080:80 -v /your_code_directory:/usr/share/nginx/html -d shapkinaa/nginx-php-fpm
 ```
 ### Dynamically Pulling code from git
 One of the nice features of this container is its ability to pull code from a git repository with a couple of environmental variables passed at run time.
